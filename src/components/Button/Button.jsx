@@ -6,7 +6,8 @@ const Button = ({ variant = 'primary', children, ...rest }) => {
       <button className={`btn btn-${variant}`} {...rest}>
         {children}
       </button>
-      <button className={`btn btn-${variant}-outlined ms-1`} {...rest}>
+      <div className="d-inline-block m-1" />
+      <button className={`btn btn-${variant}-outlined `} {...rest}>
         {children}
       </button>
     </>
