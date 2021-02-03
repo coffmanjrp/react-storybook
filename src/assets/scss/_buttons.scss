@@ -22,6 +22,21 @@
   &:focus {
     outline: 0;
   }
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.65;
+  }
+  &-lg {
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.25rem;
+  }
+  &-sm {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.2rem;
+    font-size: 0.875rem;
+  }
   &-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
