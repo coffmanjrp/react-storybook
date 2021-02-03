@@ -29,8 +29,8 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: #0b5ed7;
-      border-color: #0a58ca;
+      background-color: var(--primary-darken-color);
+      border-color: var(--primary-lighten-color);
       color: #fff;
     }
     &:focus {
@@ -58,8 +58,8 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: #5c636a;
-      border-color: #565e64;
+      background-color: var(--secondary-darken-color);
+      border-color: var(--secondary-lighten-color);
       color: #fff;
     }
     &:focus {
@@ -87,8 +87,8 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: #157347;
-      border-color: #146c43;
+      background-color: var(--success-darken-color);
+      border-color: var(--success-lighten-color);
       color: #fff;
     }
     &:focus {
@@ -116,8 +116,8 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: #bb2d3b;
-      border-color: #b02a37;
+      background-color: var(--danger-darken-color);
+      border-color: var(--danger-lighten-color);
       color: #fff;
     }
     &:focus {
@@ -145,8 +145,8 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: #ffca2c;
-      border-color: #ffc720;
+      background-color: var(--warning-darken-color);
+      border-color: var(--warning-lighten-color);
       color: #000;
     }
     &:focus {
@@ -174,8 +174,8 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: #31d2f2;
-      border-color: #25cff2;
+      background-color: var(--info-darken-color);
+      border-color: var(--info-lighten-color);
       color: #000;
     }
     &:focus {
@@ -203,8 +203,8 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: #f9fafb;
-      border-color: #f9fafb;
+      background-color: var(--light-darken-color);
+      border-color: var(--light-darken-color);
       color: #000;
     }
     &:focus {
@@ -232,8 +232,8 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: #1c1f23;
-      border-color: #1a1e21;
+      background-color: var(--dark-darken-color);
+      border-color: var(--dark-lighten-color);
       color: #fff;
     }
     &:focus {
@@ -261,7 +261,7 @@
     &:hover,
     &:active,
     &:focus {
-      color: #0a58ca;
+      color: var(--primary-lighten-color);
     }
     &:focus {
       box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
