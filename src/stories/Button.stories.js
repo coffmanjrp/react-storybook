@@ -8,13 +8,15 @@ export default {
   args: {
     children: 'Button',
   },
-  argTypes: {
-    onClick: { action: 'clicked!' },
-  },
+  // argTypes: {
+  //   onClick: { action: 'clicked!' },
+  // },
   // decorators: [(story) => <Center>{story()}</Center>],
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => (
+  <Button {...args} onClick={() => console.log('Button clicked')} />
+);
 export const Primary = Template.bind({});
 Primary.args = {
   variant: 'primary',

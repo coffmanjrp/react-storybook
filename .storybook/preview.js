@@ -1,4 +1,5 @@
-// import Center from '../src/components/Center/Center';
+import { addDecorator } from '@storybook/react';
+import { withConsole } from '@storybook/addon-console';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -10,4 +11,4 @@ export const parameters = {
   },
 };
 
-// export const decorators = [(story) => <Center>{story()}</Center>];
+addDecorator((storyFn, context) => withConsole()(storyFn)(context));
