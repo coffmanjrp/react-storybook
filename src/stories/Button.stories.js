@@ -9,7 +9,7 @@ export default {
     children: 'Button',
   },
   argTypes: {
-    onClick: { actions: console.log('clicked!') },
+    onClick: { action: 'clicked!' },
   },
   // decorators: [(story) => <Center>{story()}</Center>],
 };
@@ -20,7 +20,6 @@ Primary.args = {
   variant: 'primary',
   children: 'Primary',
   size: 'md',
-  onClick: console.log('clicked!'),
 };
 
 export const Secondary = () => <Button variant="secondary">Secondary</Button>;
