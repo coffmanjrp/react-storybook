@@ -27,3 +27,6 @@ yarn-error.log*
 
 # vscode settings
 /.vscode
+
+# build-storybook
+/storybook-static
