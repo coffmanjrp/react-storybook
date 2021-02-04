@@ -8,5 +8,6 @@ module.exports = {
     '@whitespace/storybook-addon-html',
     'storybook-addon-pseudo-states',
     'storybook-facelift',
+    '@storybook/addon-notes/register-panel',
   ],
 };

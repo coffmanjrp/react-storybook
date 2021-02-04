@@ -7,8 +7,8 @@ const Button = ({
   isOutlined,
   color,
   isDisabled,
-  customBackgroundColor,
-  customBorderColor,
+  isFullWidth,
+  isActive,
   ...rest
 }) => {
   return (
@@ -16,7 +16,9 @@ const Button = ({
       <button
         className={`btn btn-${variant}${
           isOutlined ? '-outlined' : ''
-        } btn-${size} ${isDisabled ? 'disabled' : ''}`}
+        } btn-${size} ${isFullWidth ? 'btn-block' : ''} ${
+          isDisabled ? 'disabled' : ''
+        } ${isActive ? 'active' : ''}`}
         {...rest}
       >
         {label}

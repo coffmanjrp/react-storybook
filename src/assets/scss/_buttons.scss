@@ -42,10 +42,15 @@
     border-radius: 0.2rem;
     font-size: 0.875rem;
   }
+  &-block {
+    display: block;
+    width: 100%;
+  }
   &-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: #fff;
+    &.active,
     &:hover,
     &:active,
     &:focus {
@@ -59,6 +64,7 @@
     &-outlined {
       color: var(--primary-color);
       border-color: var(--primary-color);
+      &.active,
       &:hover,
       &:active,
       &:focus {
@@ -75,6 +81,7 @@
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
     color: #fff;
+    &.active,
     &:hover,
     &:active,
     &:focus {
@@ -88,6 +95,7 @@
     &-outlined {
       color: var(--secondary-color);
       border-color: var(--secondary-color);
+      &.active,
       &:hover,
       &:active,
       &:focus {
@@ -104,6 +112,7 @@
     background-color: var(--success-color);
     border-color: var(--success-color);
     color: #fff;
+    &.active,
     &:hover,
     &:active,
     &:focus {
@@ -117,6 +126,7 @@
     &-outlined {
       color: var(--success-color);
       border-color: var(--success-color);
+      &.active,
       &:hover,
       &:active,
       &:focus {
@@ -133,6 +143,7 @@
     background-color: var(--danger-color);
     border-color: var(--danger-color);
     color: #fff;
+    &.active,
     &:hover,
     &:active,
     &:focus {
@@ -146,6 +157,7 @@
     &-outlined {
       color: var(--danger-color);
       border-color: var(--danger-color);
+      &.active,
       &:hover,
       &:active,
       &:focus {
@@ -162,6 +174,7 @@
     background-color: var(--warning-color);
     border-color: var(--warning-color);
     color: #000;
+    &.active,
     &:hover,
     &:active,
     &:focus {
@@ -175,6 +188,7 @@
     &-outlined {
       color: var(--warning-color);
       border-color: var(--warning-color);
+      &.active,
       &:hover,
       &:active,
       &:focus {
@@ -191,6 +205,7 @@
     background-color: var(--info-color);
     border-color: var(--info-color);
     color: #000;
+    &.active,
     &:hover,
     &:active,
     &:focus {
@@ -204,6 +219,7 @@
     &-outlined {
       color: var(--info-color);
       border-color: var(--info-color);
+      &.active,
       &:hover,
       &:active,
       &:focus {
@@ -220,6 +236,7 @@
     background-color: var(--light-color);
     border-color: var(--light-color);
     color: #000;
+    &.active,
     &:hover,
     &:active,
     &:focus {
@@ -233,6 +250,7 @@
     &-outlined {
       color: var(--light-color);
       border-color: var(--light-color);
+      &.active,
       &:hover,
       &:active,
       &:focus {
@@ -249,6 +267,7 @@
     background-color: var(--dark-color);
     border-color: var(--dark-color);
     color: #fff;
+    &.active,
     &:hover,
     &:active,
     &:focus {
@@ -262,6 +281,7 @@
     &-outlined {
       color: var(--dark-color);
       border-color: var(--dark-color);
+      &.active,
       &:hover,
       &:active,
       &:focus {
@@ -278,6 +298,7 @@
     font-weight: 400;
     color: var(--primary-color);
     text-decoration: underline;
+    &.active,
     &:hover,
     &:active,
     &:focus {

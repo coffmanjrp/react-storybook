@@ -1,4 +1,5 @@
 import Button from '../components/Button';
+import md from '../components/Button/Button.md';
 
 const variants = [
   'primary',
@@ -69,14 +70,35 @@ export default {
         type: 'boolean',
       },
     },
+    isFullWidth: {
+      control: {
+        type: 'boolean',
+      },
+    },
+    isActive: {
+      control: {
+        type: 'boolean',
+      },
+    },
+  },
+  parameters: {
+    notes: { md },
   },
 };
 
 const Template = (args) => <Button {...args} />;
+
 export const Basic = Template.bind({});
 Basic.args = {
   variant: 'primary',
   size: 'md',
+};
+
+export const Outline = Template.bind({});
+Outline.args = {
+  variant: 'primary',
+  size: 'md',
+  isOutlined: true,
 };
 
 export const All = (args) => {
@@ -108,3 +130,24 @@ export const Sizes = (args) => {
 Sizes.args = {
   variant: 'primary',
 };
+
+export const FullWidth = Template.bind({});
+FullWidth.args = {
+  variant: 'primary',
+  size: 'md',
+  isFullWidth: true,
+};
+
+export const Active = Template.bind({});
+Active.args = {
+  variant: 'primary',
+  size: 'md',
+  isActive: true,
+};
+
+Basic.storyName = 'Basic Button';
+Outline.storyName = 'Outline Button';
+All.storyName = 'All Colors';
+Sizes.storyName = 'Sizes';
+FullWidth.storyName = 'Full Width Button';
+Active.storyName = 'Active State';
