@@ -16,8 +16,7 @@ const Button = ({
       <button
         className={`btn btn-${variant}${
           isOutlined ? '-outlined' : ''
-        } btn-${size} ${isDisabled ? 'disable' : ''}`}
-        disabled={isDisabled}
+        } btn-${size} ${isDisabled ? 'disabled' : ''}`}
         {...rest}
       >
         {label}

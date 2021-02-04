@@ -5,5 +5,8 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/preset-create-react-app',
     '@storybook/addon-a11y',
+    '@whitespace/storybook-addon-html',
+    'storybook-addon-pseudo-states',
+    'storybook-facelift',
   ],
 };

@@ -45,6 +45,9 @@
     "@storybook/addon-links": "^6.1.16",
     "@storybook/node-logger": "^6.1.16",
     "@storybook/preset-create-react-app": "^3.1.5",
-    "@storybook/react": "^6.1.16"
+    "@storybook/react": "^6.1.16",
+    "@whitespace/storybook-addon-html": "^4.2.0",
+    "storybook-addon-pseudo-states": "^1.0.0-rc.3",
+    "storybook-facelift": "^6.2.0"
   }
 }
