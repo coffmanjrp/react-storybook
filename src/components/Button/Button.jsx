@@ -1,14 +1,26 @@
 import '../../assets/css/main.css';
 
-const Button = ({ variant = 'primary', size = 'md', children, ...rest }) => {
+const Button = ({
+  label,
+  variant,
+  size,
+  isOutlined,
+  color,
+  isDisabled,
+  customBackgroundColor,
+  customBorderColor,
+  ...rest
+}) => {
   return (
     <>
-      <button className={`btn btn-${variant} btn-${size}`} {...rest}>
-        {children}
-      </button>
-      <div className="d-inline-block m-1" />
-      <button className={`btn btn-${variant}-outlined btn-${size} `} {...rest}>
-        {children}
+      <button
+        className={`btn btn-${variant}${
+          isOutlined ? '-outlined' : ''
+        } btn-${size} ${isDisabled ? 'disable' : ''}`}
+        disabled={isDisabled}
+        {...rest}
+      >
+        {label}
       </button>
     </>
   );
