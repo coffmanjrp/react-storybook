@@ -20,10 +20,10 @@ export default {
   title: 'components/Buttons',
   component: Button,
   args: {
-    label: 'Button',
+    children: 'Button',
   },
   argTypes: {
-    label: {
+    children: {
       table: {
         type: {
           summary: 'node',
@@ -88,16 +88,16 @@ export default {
 
 const Template = (args) => <Button {...args} />;
 
-export const Basic = Template.bind({});
-Basic.args = {
-  variant: 'primary',
-  size: 'md',
+export const Standard = Template.bind({});
+Standard.args = {
+  variant: variants[0],
+  size: sizes[1],
 };
 
 export const Outline = Template.bind({});
 Outline.args = {
-  variant: 'primary',
-  size: 'md',
+  variant: variants[0],
+  size: sizes[1],
   isOutlined: true,
 };
 
@@ -113,7 +113,7 @@ export const All = (args) => {
   );
 };
 All.args = {
-  size: 'md',
+  size: sizes[1],
 };
 
 export const Sizes = (args) => {
@@ -128,24 +128,24 @@ export const Sizes = (args) => {
   );
 };
 Sizes.args = {
-  variant: 'primary',
+  variant: variants[0],
 };
 
 export const FullWidth = Template.bind({});
 FullWidth.args = {
-  variant: 'primary',
-  size: 'md',
+  variant: variants[0],
+  size: sizes[1],
   isFullWidth: true,
 };
 
 export const Active = Template.bind({});
 Active.args = {
-  variant: 'primary',
-  size: 'md',
+  variant: variants[0],
+  size: sizes[1],
   isActive: true,
 };
 
-Basic.storyName = 'Basic Button';
+Standard.storyName = 'Standard Button';
 Outline.storyName = 'Outline Button';
 All.storyName = 'All Colors';
 Sizes.storyName = 'Sizes';

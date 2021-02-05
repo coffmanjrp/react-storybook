@@ -15,6 +15,9 @@ hr {
   border: 0;
   color: inherit;
   opacity: 0.25;
+  &:not([size]) {
+    height: 1px;
+  }
 }
 
 h6,

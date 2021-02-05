@@ -1,7 +1,7 @@
 import '../../assets/css/main.css';
 
 const Button = ({
-  label,
+  children,
   variant,
   size,
   isOutlined,
@@ -21,7 +21,7 @@ const Button = ({
         } ${isActive ? 'active' : ''}`}
         {...rest}
       >
-        {label}
+        {children}
       </button>
     </>
   );
