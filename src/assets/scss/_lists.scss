@@ -1,0 +1,16 @@
+.list {
+  &-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+  &-inline {
+    padding-left: 0;
+    list-style: none;
+    &-item {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
