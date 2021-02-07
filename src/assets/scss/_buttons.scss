@@ -378,4 +378,8 @@
       filter: invert(1) grayscale(100%) brightness(200%);
     }
   }
+  .badge {
+    position: relative;
+    top: -1px;
+  }
 }
