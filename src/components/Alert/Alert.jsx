@@ -1,8 +1,8 @@
 import '../../assets/css/main.css';
 
 export const Alert = ({ children, variant, isDismissible, ...rest }) => {
-  const handleDismiss = (e) => {
-    e.target.parentElement.remove();
+  const handleDismiss = (msg) => {
+    console.log(msg);
   };
 
   return (
@@ -19,7 +19,7 @@ export const Alert = ({ children, variant, isDismissible, ...rest }) => {
           <button
             type="button"
             className="btn-close"
-            onClick={(e) => handleDismiss(e)}
+            onClick={() => handleDismiss('Dismissed!')}
           />
         ) : (
           ''
