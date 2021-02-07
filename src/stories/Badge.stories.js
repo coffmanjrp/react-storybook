@@ -99,3 +99,9 @@ export const Rounded = (args) => {
 Rounded.args = {
   isRounded: true,
 };
+
+Standard.storyName = 'Standard Badge';
+Example.storyName = 'Examples';
+withButton.storyName = 'Button with Badge';
+All.storyName = 'All Colors';
+Rounded.storyName = 'Pill Badges';
